@@ -1,0 +1,27 @@
+
+
+import java.awt.GridLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+
+public class AkenNaidis {
+    
+    public static void main(String[] args) {
+        
+        JFrame aken = new JFrame("Naidis");
+        aken.setSize(300, 200);
+        aken.setLayout(new GridLayout(2, 1));
+        aken.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);      
+
+        JTextField vali = new JTextField();
+        vali.setText("Tere!");
+        aken.add(vali);
+        
+        JButton nupp = new JButton("Kasva suureks!");
+        aken.add(nupp);
+        aken.setVisible(true);
+        
+    }
+}

@@ -1,0 +1,36 @@
+package ee.itcollege.snake.elements;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import ee.itcollege.snake.lib.Direction;
+
+public class SnakeTurningTest {
+
+	@Test
+	public void testInitialDirection() {
+		Snake s = new Snake();
+		assertEquals(Direction.RIGHT, s.getDirection());
+	}
+	
+	@Test
+	public void testOppositeTurn() {
+		Snake s = new Snake();
+		s.setDirection(Direction.LEFT);
+		assertEquals(Direction.RIGHT, s.getDirection());
+		
+		s = new Snake();
+		s.setDirection(Direction.UP);
+		assertEquals(Direction.UP, s.getDirection());
+		
+		s = new Snake();
+		s.setDirection(Direction.DOWN);
+		assertEquals(Direction.DOWN, s.getDirection());
+	}
+	
+	public void testOppositeTurnComplex() {
+		
+	}
+
+}

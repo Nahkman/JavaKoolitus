@@ -1,0 +1,27 @@
+package praktikum1;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
+public class SortNames {
+
+	public static void main(String[] args) {
+		ArrayList<String> names = new ArrayList<>();
+		
+		int counter = 0;
+		Scanner input = new Scanner(System.in);
+		
+		while (counter++ < 5) {
+			System.out.println("Insert name: ");
+			names.add(input.nextLine());
+		}
+		
+		Collections.sort(names);
+		for (String name : names) {
+			System.out.println(name);
+		}
+
+	}
+
+}

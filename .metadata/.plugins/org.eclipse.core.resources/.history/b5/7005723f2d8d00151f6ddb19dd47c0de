@@ -1,0 +1,24 @@
+package ee.itcollege.snake.game;
+
+import java.awt.Color;
+import java.awt.Graphics2D;
+import java.awt.geom.Area;
+
+import ee.itcollege.snake.lib.IDrawable;
+
+public class Frame implements IDrawable{
+
+	@Override
+	public Area getCollisionArea() {
+
+		return null;
+	}
+
+	@Override
+	public void drawItself(Graphics2D g) {
+			g.setColor(Color.gray);
+			g.fill(getCollisionArea());
+		
+	}
+
+}

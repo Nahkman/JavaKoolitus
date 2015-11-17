@@ -1,0 +1,59 @@
+package praktikum1;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Scanner;
+
+public class SortNames {
+
+	public static void main(String[] args) {
+		ArrayList<String> names = new ArrayList<>();
+
+		int counter = 0;
+		Scanner input = new Scanner(System.in);
+
+		while (counter++ < 5) {
+			System.out.println("Insert name: ");
+			names.add(input.nextLine());
+		}
+
+		Collections.sort(names, new Comparator<String>() {
+
+			@Override
+			public int compare(String o1, String o2) {
+
+				if (o1.length() > o2.length()) {
+					return 1;
+				} else if (o1.length() < o2.length()) {
+					return -1;
+				} else {
+					return o1.compareTo(o2);
+				}
+
+			}
+
+		});
+		
+		
+		/**
+		 * Lambda expression comparatorist
+		 * (o1, o2) -> {
+
+			if (o1.length() > o2.length()) {
+				return 1;
+			} else if (o1.length() < o2.length()) {
+				return -1;
+			} else {
+				return o1.compareTo(o2);
+			}
+
+		}
+		 */
+		for (String name : names) {
+			System.out.println(name);
+		}
+
+	}
+
+}

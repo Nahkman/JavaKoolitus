@@ -1,0 +1,5 @@
+package ee.itcollege.snake.elements;
+
+public class Apple {
+
+}

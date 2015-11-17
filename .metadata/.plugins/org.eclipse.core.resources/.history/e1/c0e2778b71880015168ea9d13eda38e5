@@ -1,0 +1,14 @@
+package praktikum1;
+
+import java.applet.Applet;
+import java.awt.Color;
+
+public class Graphics1 extends Applet{
+	
+	public void paint(Graphics1 g) {
+		
+		g.setColor(Color.RED);
+		g.fillRect(0,0,100,100);
+	}
+
+}

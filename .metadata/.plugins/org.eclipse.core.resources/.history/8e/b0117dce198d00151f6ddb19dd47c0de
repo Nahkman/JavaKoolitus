@@ -1,0 +1,14 @@
+package ee.itcollege.snake.elements;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class SnakeTurningTest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

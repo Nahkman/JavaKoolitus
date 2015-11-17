@@ -1,0 +1,14 @@
+package ee.itcollege.snake.lib;
+
+import java.awt.image.BufferedImage;
+import java.awt.image.IndexColorModel;
+import java.io.Serializable;
+
+public class GameImage extends BufferedImage implements Serializable{
+
+	public GameImage(int width, int height, int imageType, IndexColorModel cm) {
+		super(width, height, imageType, cm);
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,16 @@
+package praktikum1;
+
+public class tsyklid {
+
+	public static void main(String[] args) {
+		
+		for (int i = 9; i >= 0; i--) {
+			for (int n = 9; n >= i; n--) {
+				System.out.printf("%2d", i);
+			}
+			System.out.println();
+		}
+
+	}
+
+}
